@@ -6,5 +6,5 @@ while True:
   print("3.")
   print("4.")
   print("5.Salir")
-
+  opcion=int(input("elige una opcion"))
         
