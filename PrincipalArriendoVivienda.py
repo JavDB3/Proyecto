@@ -1,4 +1,5 @@
 #Arriendo de vivienda
+import libreria as lb
 while True:
   print("1.Valide el usuario" )
   print("2.")
