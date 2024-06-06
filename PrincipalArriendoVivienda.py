@@ -12,9 +12,9 @@ while True:
   if opcion==2:
     for usuario in range ():
       print(int(input("Ingrese su fecha de nacimiento (dia/mes/año): ")))
-   if opcion==3:
+  if opcion==3:
     print(int(input("Ingrese cuantos años a trabajado:")))
-     if opcion==3 =>1:
+     if opcion==3 =0:
        print("No puede arrendar debido a que tiene menos de un año trabajado")
        
  
