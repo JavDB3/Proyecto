@@ -10,4 +10,4 @@ while True:
   if opcion==1:
     print(input("Ingrese su primer nombre y sus dos apellidos: "))
   if opcion==2:
-    print(int(input("Ingrese su usuario(dia/mes/año):      ")))
+    print(int(input("Ingrese su usuario(dia/mes/año): ")))
