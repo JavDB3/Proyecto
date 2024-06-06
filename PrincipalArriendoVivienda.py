@@ -11,3 +11,4 @@ while True:
     print(input("Ingrese su primer nombre y sus dos apellidos: "))
   if opcion==2:
     print(int(input("Ingrese su usuario(dia/mes/año): ")))
+    for usuario in range (18,100)
