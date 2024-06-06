@@ -7,4 +7,5 @@ while True:
   print("4.")
   print("5.Salir")
   opcion=int(input("elige una opcion"))
-        
+  if opcion==1:
+    print("Ingrese su usuario(dia/mes/año):      ")
