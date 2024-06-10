@@ -36,6 +36,6 @@ while True:
      if 1960 <= año <= 2003:
          break
      else:
-         print("¡Ingrese una año valido(Si es nacio despues del año 2003 no sera aceptado)!")
+         print("¡Ingrese una año valido!(Si  nacio despues del año 2003 no sera aceptado)")
     print("Su fecha de nacimiento es:",dia,mes,año)
     
