@@ -1,41 +1,56 @@
 #Arriendo de vivienda
-import Libreria as lb
+import libreria as lb
 while True:
-    print("1.Registrar usuario ")
-    print("2.Viviendas disponibles")
-    print("3.Arriendo de viviendas")
-    print("4.Salir")
-    opcion=int(input("Elige una opcion:"))
-    
-    if opcion==1:
-       while True:
-        nomb = input("Ingrese su primer nombre y su primer apellido: ")
-        nombre_apellido = nomb.split()
-        
-        if len(nombre_apellido) == 2:
-            break  
-        else:
-            print("¡Ingrese solamente su primer nombre y su primer apellido!")  
-
-    print("Nombre y apellido ingresados:", nomb)  
-    print("[Ingrese su fecha de nacimiento]")
-    while True:
-     dia=int(input("Ingrese el dia en el que nacio:"))
-     if 1 <= dia <= 31:
+    usuario=input("Ingrese el usuario:")
+    usuario_correcto="colocolo"
+    if usuario==usuario_correcto:
         break
-     else:
-      print("¡Ingrese un dia valido!")
-    while True:    
-     mes=int(input("Ingrese el mes en el que nacio:"))
-     if 1 <= mes <= 12:
-         break
-     else:
-         print("¡Ingrese un mes valido!")
+    else:
+        print("Ingrese un usuario correcto")
+
+
+intentos_disponibles = 3
+contraseña_correcta = "1991"
+
+while intentos_disponibles > 0:
+    contraseña = input("Ingrese la contraseña: ")
+    
+    if contraseña == contraseña_correcta:
+        print("¡Has sido registrado!")
+        break
+    else:
+        intentos_disponibles-=1
+        if intentos_disponibles > 0:
+            print("Ingresaste una contraseña incorrecta,Recuerda que solo tienes tres intentos.")
+        else:
+            print("Has gastado todos los intentos,Seras expulsado del programa.")
+        
+
+def main():
     while True:
-     año=int(input("Ingrese el año en el que nacio:"))
-     if 1960 <= año <= 2003:
-         break
-     else:
-         print("¡Ingrese una año valido!(Si nacio antes del año 1960 y despues del año 2003 no sera aceptado)")
-    print("Su fecha de nacimiento es:",dia,mes,año)
+        print("1. Registrar usuario")
+        print("2. Viviendas disponibles")
+        print("3. Arriendo de viviendas")
+        print("4. Salir")
+        
+        try:
+            opcion = int(input("Eliga una opcion: "))
+        except ValueError:
+            print("¡Por favor, ingrese un número válido!")
+            continue
+        
+        if opcion == 1:
+            lb.registrar_usuario()
+        elif opcion == 2:
+            lb.viviendas_disponibles()
+        elif opcion == 3:
+            lb.arriendo_viviendas()
+        elif opcion == 4:
+            print("Ha salido del programa")
+            break
+        else:
+            print("¡Opción no válida! elija una opción del 1 al 4.")
+
+
+main()
     
