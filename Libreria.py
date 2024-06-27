@@ -95,4 +95,61 @@ casa_concepcion="""En concepcion se encuentra una casa de:
 -Cocina
 - Bodega"""
 
+   
+def arriendo_viviendas():
+    print("[Para poder arrendar cualquiera de nuestras viviendas disponibles, tendras que cumplir con los siguientes requerimientos]")
+    while True:
+        rut = input("Ingrese su rut (Escribalo sin el guion):")
+
+        if len(rut)==9 and rut.isdigit():
+            break
+          
+        else:
+            print("Ingrese el rut de manera correcta, recuerde que no se escribe el guion y debe ingresar 9 números.")
+        
+        
+
+    while True:
+            comprobante=int(input("Ingrese los ingresos monetarios de sus ultimos 12 meses:"))
+            if comprobante>=5000000:
+                print("El sueldo ingresado es suficiente")
+                break
+            else:
+                print("El sueldo que usted ha ingresado es insuficiente para que le podamos arrendar.")
+    while True:
+
+            meses=int(input("Ingrese cantidad de meses que desea arrendar la vivienda:"))
+            if meses>=12:
+                print("Cantidad de meses suficiente")
+                break
+            else:
+                print("Cantidad de meses insuficiente,no le podemos arrendar menos de 12 meses.")
+                
+
+    print("[Elige la vivienda que deseas arrrendar]")            
+    while True:
+        print("1. Casa en colina")
+        print("2. Departamento en las condes")
+        print("3. Departamento en Talcahuano")
+        print("4. Casa en Concepcion")
+        print("5.Salir")
+        opcion=int(input("Eliga la vivienda:"))
+        if opcion==1:
+            print("Has elegido la siguienta,",casa_colina)
+            break
+        if opcion==2:
+            print("Has elegido la siguiente,",casa_condes)
+            break
+        if opcion==3:
+            print("Has elegido la siguiente,",casa_talcahuano)
+            break
+        if opcion==4:
+            print("Has elegido la siguiente,",casa_concepcion)
+            break
+        if opcion==5:
+            print("Has elegido salir, por lo cual no elegiras casa.")
+            break
+        else:
+            print("Eliga una opcion correcta")
+
 
