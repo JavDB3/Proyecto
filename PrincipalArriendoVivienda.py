@@ -1,4 +1,5 @@
-#Arriendo de vivienda
+#usuario:colocolo
+#contraseña:1991
 import libreria as lb
 while True:
     usuario=input("Ingrese el usuario:")
@@ -53,4 +54,5 @@ def main():
 
 
 main()
+
     
